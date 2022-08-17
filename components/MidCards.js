@@ -18,7 +18,7 @@ const MidCards = () => {
           <Button
               title={item.titre}
               buttonStyle={{
-                backgroundColor: 'rgba(255, 193, 7, 1)',
+                backgroundColor: 'rgb(64,196,255)',
                 height:40,
                 width:100,
                 borderRadius: 30,
@@ -42,12 +42,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 10,
     marginLeft: 10,
-    color: 'white',
+    color: 'rgb(64,196,255)',
   },
 
   MidCardsView: {
     height: 110,
-    backgroundColor: 'rgb(0, 60, 153  )',
+    backgroundColor: 'rgb(225,226,225)',
   },
 
   

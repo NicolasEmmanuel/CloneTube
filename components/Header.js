@@ -2,8 +2,12 @@ import {StyleSheet, Text, View} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import React from 'react';
 import {Icon} from '@rneui/themed';
+import { useNavigation } from '@react-navigation/native';
 
 const Header = () => {
+
+  const navigation = useNavigation();
+  
   return (
     <View style={styles.header}>
       <Icon
@@ -12,6 +16,7 @@ const Header = () => {
         type=""
         size={35}
         color="white"
+        
       />
 
       <Icon
@@ -32,7 +37,7 @@ const styles = StyleSheet.create({
     height: 55,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    backgroundColor: 'rgb(0, 60, 153  )',
+    backgroundColor: 'rgb(64,196,255)',
   },
 
   headerIconMenu: {

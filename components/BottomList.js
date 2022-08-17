@@ -26,16 +26,17 @@ export default BottomList;
 
 const styles = StyleSheet.create({
   BottomListView: {
-    height: 350,
-    backgroundColor: 'rgb(8, 120, 255  )',
+    height: 360,
+    backgroundColor: 'rgb(225,226,225)',
   },
 
   BottomListText: {
+    height:30,
     fontSize: 15,
     fontWeight:'bold',
     marginTop: 10,
     marginLeft: 10,
-    color: 'white',
+    color: 'rgb(64,196,255)',
   },
 
   BottomListCards: {},
