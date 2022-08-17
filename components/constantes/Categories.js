@@ -1,4 +1,4 @@
-export const categories = [
+export const Categories = [
     {
         id:1,
         titre:'Actualité',
@@ -10,5 +10,9 @@ export const categories = [
     {
         id:3,
         titre:'Musique',
+    },
+    {
+        id:4,
+        titre:'Movie',
     },
 ]

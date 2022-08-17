@@ -1,48 +1,35 @@
-import { StyleSheet, Text, View, Image,  } from 'react-native'
-import React from 'react'
-import { Card } from "@rneui/themed";
-
-
-
-
-
+import {StyleSheet, Text, View, Image, ImageBackground} from 'react-native';
+import React from 'react';
+import {Card} from '@rneui/themed';
 
 const TopCards = ({item}) => {
-   
   return (
-    <View>
-        
-            <Text style={styles.TopSCardsview}></Text>
+    <ImageBackground
+          source={item.image}
+          resizeMode="cover"
+          style={styles.image}>
 
-                <Card style={styles.TopSCardsTitle}>
-                    <Card.Title>{item.titre}</Card.Title>
-                
-                    <Image
-                        style={styles.imageTopCards}
-                        source={{uri:'https://awildgeographer.files.wordpress.com/2015/02/john_muir_glacier.jpg',}}
-                        />
-                
-                </Card>
-        
-      </View>
+      <Text style={styles.text}>{item.titre}</Text>
       
-    
-  )
-}
+    </ImageBackground>
+  );
+};
 
-export default TopCards
+export default TopCards;
 
 const styles = StyleSheet.create({
-
-    TopCardsview:{
-     width: 80,
-    height: 60,
-    paddingBottom: 20,
-  },
-  
-    imageTopCards: {
-   
+  image: {
+    height: 80,
+    width: 150,
+    marginLeft: 15,
   },
 
-  
-})
+  text: {
+    color: 'white',
+    fontSize: 10,
+    lineHeight: 20,
+    fontWeight: 'bold',
+    marginLeft: 8,
+    backgroundColor: '#000000c0',
+  },
+});
