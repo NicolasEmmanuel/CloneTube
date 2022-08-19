@@ -13,6 +13,6 @@ export const Categories = [
     },
     {
         id:4,
-        titre:'Movie',
+        titre:'Cinéma',
     },
 ]

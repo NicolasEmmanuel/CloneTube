@@ -9,7 +9,7 @@ const TopCards = ({item}) => {
   const navigation = useNavigation();
   
   return (
-    <View>
+    <View style={styles.TendenceView}>
 
         <Text style={styles.text}>{item.titre}</Text>
         
@@ -29,10 +29,15 @@ const TopCards = ({item}) => {
 export default TopCards;
 
 const styles = StyleSheet.create({
+  
+  TendenceView: {
+   flexDirection:'column-reverse',
+  },
+
   image: {
     height: 80,
     width: 150,
-    marginLeft: 15,
+    marginLeft: 10,
   },
 
   text: {
@@ -40,7 +45,8 @@ const styles = StyleSheet.create({
     fontSize: 10,
     lineHeight: 20,
     fontWeight: 'bold',
-    marginLeft: 15,
+    marginLeft: 10,
+    paddingLeft:5,
     backgroundColor: '#000000c0',
   },
 });

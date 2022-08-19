@@ -19,7 +19,6 @@ const Home = () => {
     <View>
         <Header navigation={navigation}/>
         <Tendance/>
-        <MidCards/>
         <BottomList/>
         
     </View>

@@ -8,7 +8,7 @@ const BottomCards = ({item}) => {
   const navigation = useNavigation();
     
   return (
-    <View>
+    <View style={styles.ViewBottomCards}>
 
           <Text style={styles.text}>{item.titre}</Text>
 
@@ -29,17 +29,22 @@ export default BottomCards
 
 const styles = StyleSheet.create({
 
-        image: {
-          height: 180,
-          width: 300,
-          marginLeft: 50,
-          marginBottom:10,
-        },
+  ViewBottomCards:{
+ 
+  },
+
+  image: {
+    height: 280,
+    width: 390,
+    marginLeft: 10,
+    marginBottom:10,
+  },
       
-        text: {
-          color: 'white',
-          backgroundColor: '#000000c0',
-          marginLeft:50,
-          width:300,
-        },
+  text: {
+    color: 'white',
+    backgroundColor: '#000000c0',
+    marginLeft:10,
+    paddingLeft:10,
+    width:390,
+  },
 })

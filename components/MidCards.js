@@ -5,7 +5,8 @@ import {Button} from '@rneui/themed';
 import {Categories} from './constantes/Categories';
 
 
-const MidCards = () => {
+const MidCards = ({videoFilter}) => {
+
   return (
     <View style={styles.MidCardsView}>
       <Text style={styles.MidCardsText}>Categories</Text>
@@ -24,7 +25,10 @@ const MidCards = () => {
                 borderRadius: 30,
                 marginLeft: 35,
                 marginTop: 20,
-            }}
+                }}
+
+            
+            onPress={()=>videoFilter(item.id)}
           />
         )}
         keyExtractor={item => item.id}
